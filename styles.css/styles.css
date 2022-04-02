@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #e2e2e2;
@@ -6,7 +6,25 @@ body{
 }
 
 
+#futuro{
+  position: absolute;
+  right: 10px;
+  top: 209px;
 
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 10px;
+
+}
+
+video {
+  width: 640px;
+  height: 360px;
+  object-fit: cover;
+}
 
 .header a {
   float: left;
@@ -19,11 +37,12 @@ body{
   border-radius: 4px;
 }
 
-.header a.logo{
- border-radius: 100%;
+.header a.logo {
+  border-radius: 100%;
 
 }
-.logo{
+
+.logo {
   width: 45px;
   height: 47px;
 }
@@ -33,25 +52,44 @@ body{
   background-color: #ddd;
   color: black;
 }
+
 .header a.active {
   background-color: #aaaaaa;
   color: rgb(255, 255, 255);
 }
+
 .header-right {
   float: right;
 }
 
-table tbody td{
+table tbody td {
   background-color: #12130f;
   color: #eae6e5;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 100px) {
   .header a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
+
+  .center{
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  #futuro{
+    position: relative;
+    top: 10px;
+  }
+
 }
