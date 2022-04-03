@@ -67,7 +67,7 @@ table tbody td {
   color: #eae6e5;
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 700px) {
   .header a {
     float: none;
     display: block;
